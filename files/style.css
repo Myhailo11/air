@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0  ;
+}
+.heager{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.container{
+    display:flex ;
+    justify-content:space-between ;
+    max-width: 1150px;
+    padding-left:20xp;
+    padding-right:20xp;
+    margin: 0 auto;
+    align-items: center;
+
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+     flex: 1;
+     align-items: center;
+
+}
+.heager-butons{
+    display:flex ;
+    margin-left:95px ;
+    align-items: center;
+}
+.nav-list{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+text-align: right;
+text-transform: capitalize;
+
+color: #181818;
+}
+
+
+
+
