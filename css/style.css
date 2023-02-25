@@ -37,7 +37,7 @@ body {
      align-items: center;
 
 }
-.heager-butons{
+.header-buttons{
     display:flex ;
     margin-left:95px ;
     align-items: center;
@@ -204,6 +204,16 @@ margin-bottom:14px ;
     font-size: 16px;
     line-height: 24px;
     color: #151515; 
+}
+.planes-background{
+    position: absolute;
+    top:208xp ;
+    right: -64px;
+    z-index:-1 ;
+}
+
+.planes{
+     position: relative;
 }
 
 
