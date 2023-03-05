@@ -1,11 +1,17 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 3;
+}
+html{
+  scroll-behavior: smooth;
 }
 body {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color:rgba(21, 21, 21, 0.6) ;
   }
   ul{
     list-style:none ;
@@ -15,6 +21,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  padding-top: 30xp 0;
 }
 .container {
   max-width: 1150px;
@@ -37,7 +44,6 @@ body {
 .header-buttons {
   display: flex;
   margin-left: 95px;
-  align-items: center;
 }
 .reg-button{
 font-family: inherit;
@@ -184,22 +190,31 @@ section {
   border-radius: 12px;
   text-align: center;
 }
-/* .services-item {
+.services-image {
   max-width: 290px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-} */
+}
 
 .services-item img {
   margin: 0 auto 13px auto;
 }
-.services-item h3 {
+.services-item .services-item-title {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  margin-bottom: 11px;
   color: #151515;
+}
+.services-item .services-item-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(21, 21, 21, 0.6);
 }
 .planes-list {
   display: flex;
@@ -260,7 +275,27 @@ gap: 24px;
     background-color:  #f5f5f5; ;
 }
 .membership-item:nth-child(2){
-background-color: #656293;;
+background-color: #656293;
+transform: translateY(-30px);
+}
+.membership-item:nth-child(2) h3{
+  color: #FFFFFF;
+}
+.membership-item:nth-child(2) .advantages-item.tick::before{
+  background-image:url(../images/tick-white.svg) ;
+}
+.membership-item:nth-child(2) .advantages-item.cross::before{
+  background-image:url(../images/cross-white.svg) ;
+}
+.membership-item:nth-child(2) button{
+background-color: #FFFFFF;
+color: #151515;
+}
+.membership-item:nth-child(2) .price{
+ color: white;
+}
+.membership-item:nth-child(2) .advantages-item{
+  color: #FFFFFF;
 }
 .membership-item:first-child{
     border-radius: 20px 0px 0px 20px;
@@ -318,7 +353,7 @@ margin-bottom:24px ;
 }
 .price{
   padding-top: 70px;
-  color: #FFFFFF;
+  color: #161616;
 }
 .number{
   font-weight: 700;
@@ -328,8 +363,18 @@ line-height: 40px;
 .advantages-button{
 background:#656293; 
 border-radius: 12px;
-padding: ;
+padding: 12px 16px;
+width: 100%;
+font-weight: 600;
+font-size: 22px;
+color: #ffffff;
+margin-top: 24px;
+border: 0; 
 }
+.footer-plane{
+  margin: 0 auto;
+}
+
 
 
 
