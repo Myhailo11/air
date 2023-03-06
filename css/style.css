@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 3;
+  padding: 0;
 }
 html{
   scroll-behavior: smooth;
@@ -16,13 +16,26 @@ body {
   ul{
     list-style:none ;
   }
-.heager {
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 30xp 0;
+  padding: 30px 0;
+  background-color:white   ;
 }
+
+@media  and (max-widht:1024xp) {
+  .nav-list{
+    display: none;
+  }
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .container {
   max-width: 1150px;
   padding-left: 20px;
@@ -44,6 +57,9 @@ body {
 .header-buttons {
   display: flex;
   margin-left: 95px;
+}
+@media  and( max-width) {
+  
 }
 .reg-button{
 font-family: inherit;
@@ -78,6 +94,14 @@ outline: none;
   text-transform: capitalize;
   color: #181818;
   text-decoration: none;
+}
+.hero {
+  background-image: url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 104px;
 }
 
 :root {
@@ -374,6 +398,48 @@ border: 0;
 .footer-plane{
   margin: 0 auto;
 }
+.footer-bottom{
+  background: #656293;
+}
+.footer-logo{
+  padding-top:50px ;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+.footer-logo a{
+  display: block;
+  height: fit-content;
+}
+.footer-info{
+  border-top:  rgba(255, 255, 255, 0.2);
+  padding-top: 17px;
+  padding-bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-info nav{
+  flex: 1;
+}
+.footer-navigation{
+  display: flex;
+  gap:30px ;
+  list-style: none;
+
+}
+.footer-link{
+  text-decoration: none;
+  font-size: 14px;
+line-height: 21px;
+color: rgba(255, 255, 255, 0.7);
+}
+.copyrith{
+  font-size: 14px;
+line-height: 21px;
+color: rgba(255, 255, 255, 0.7);
+}
+
+
 
 
 
