@@ -25,11 +25,47 @@ body {
   background-color:white   ;
 }
 
-@media  and (max-widht:1024xp) {
-  .nav-list{
-    display: none;
+@media screen and (max-width:1024px) {
+  .menu-btn {
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      border: none;
+      outline: none;
+      background: transparent;
   }
 }
+.menu-btn .bar{
+  width:30px ;
+  height: 4px;
+  position: 4px;
+  top:50%;
+  left:50%;
+  transform: translate(-50% -50%);
+  background-color: #151515;
+  transition:0.3s ;
+}
+.menu-btn .bar:nth-child(2){
+  top: calc(50% - 9px)
+}
+
+.menu-btn.active .bar:nth-child(3){
+  display:none ;
+}
+.menu-btn .bar:nth-child(1){
+  top: calc(50% - 9px)
+}
+.menu-btn .bar:nth-child(2){
+  top:50px;
+  transform:translate(-50%,0%) ;
+}
+.menu-btn .bar:nth-child(3){
+  top: calc(50% - 9px)
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -58,8 +94,17 @@ body {
   display: flex;
   margin-left: 95px;
 }
-@media  and( max-width) {
-  
+@media shereen  and( max-width) {
+  .nav-list{
+    position:fixed ;
+    height:100% ;
+    width:100% ;
+    top:0 ;
+    left:0 ;
+    padding: 15px;background-color: #ffffff ;
+    transition:0.5s ;
+    transform: translateX(100%);
+  }
 }
 .reg-button{
 font-family: inherit;
@@ -152,6 +197,14 @@ center,
 .business-botom {
   padding: 65xp 0;
   position: relative;
+}
+@media screen and (max-width:768px) {
+
+  .business-top .container,
+  .business-bottom .container {
+      flex-direction: column;
+  }
+
 }
 img {
   display: block;
